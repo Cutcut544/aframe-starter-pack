@@ -1,15 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
-  </head>
-  <body>
-    <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-    </a-scene>
-  </body>
+
+<head>
+  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
+</head>
+
+<body>
+  <a-scene>
+    <a-sky src="./assets/sky1.jpg" rotation="0 -90 0">
+    </a-sky>
+
+    <a-plane position="0 -0.05 -4" rotation="-90 0 0" width="60" height="60" color="#0a2f4d">
+    </a-plane>
+
+    <a-entity gltf-model="url(./assets/ROOM_1_Idol.glb)" scale="0.5 0.5 0.5" position="0 0 -2">
+    </a-entity>
+
+    <!-- Back wall, left to right -->
+    <a-image src="./assets/photo-01.jpg" position="-8.5 2.3 -16.93" rotation="0 0 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-02.jpg" position="-5.5 2.3 -16.93" rotation="0 0 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-03.jpg" position="2 1.8 -16.93" rotation="0 0 0" width="1.35" height="0.9"></a-image>
+    <a-image src="./assets/photo-04.jpg" position="5 1.8 -16.93" rotation="0 0 0" width="1.35" height="0.9"></a-image>
+
+    <!-- Right wall, back to front -->
+    <a-image src="./assets/EastFork-JPEG (1 of 2).jpg" position="10.68 2.3 -11.25" rotation="0 -90 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-06.jpg" position="10.68 2.3 -8.25" rotation="0 -90 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-07.jpg" position="10.68 2.3 -5.25" rotation="0 -90 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-08.jpg" position="10.68 2.3 -2.25" rotation="0 -90 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-09.jpg" position="10.68 2.3 0.75" rotation="0 -90 0" width="1.35"
+      height="0.9"></a-image>
+
+    <!-- Front wall, near the entrance side -->
+    <a-image src="./assets/photo-10.jpg" position="8.5 2.3 9.93" rotation="0 180 0" width="1.35" height="0.9"></a-image>
+    <a-image src="./assets/photo-11.jpg" position="5.5 2.3 9.93" rotation="0 180 0" width="1.35" height="0.9"></a-image>
+    <a-image src="./assets/photo-12.jpg" position="-5.5 2.3 9.93" rotation="0 180 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-13.jpg" position="-8.5 2.3 9.93" rotation="0 180 0" width="1.35"
+      height="0.9"></a-image>
+
+    <!-- Left wall, front to back -->
+    <a-image src="./assets/photo-14.jpg" position="-10.68 2.3 0.75" rotation="0 90 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-15.jpg" position="-10.68 2.3 -2.25" rotation="0 90 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-16.jpg" position="-10.68 2.3 -6.25" rotation="0 90 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-17.jpg" position="-10.68 2.3 -9.25" rotation="0 90 0" width="1.35"
+      height="0.9"></a-image>
+
+    <!-- Raised row on the downstairs back wall -->
+    <a-image src="./assets/photo-18.jpg" position="-8.5 5.3 -16.93" rotation="0 0 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-19.jpg" position="-5.5 5.3 -16.93" rotation="0 0 0" width="1.35"
+      height="0.9"></a-image>
+
+    <!-- Raised row on the downstairs right wall -->
+    <a-image src="./assets/photo-20.jpg" position="10.68 5.3 -5.25" rotation="0 -90 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-21.jpg" position="10.68 5.3 -2.25" rotation="0 -90 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-22.jpg" position="10.68 5.3 0.75" rotation="0 -90 0" width="1.35"
+      height="0.9"></a-image>
+
+    <!-- Raised row on the downstairs front wall -->
+    <a-image src="./assets/photo-23.jpg" position="8.5 5.3 9.93" rotation="0 180 0" width="1.35" height="0.9"></a-image>
+    <a-image src="./assets/photo-24.jpg" position="5.5 5.3 9.93" rotation="0 180 0" width="1.35" height="0.9"></a-image>
+    <a-image src="./assets/photo-25.jpg" position="-5.5 5.3 9.93" rotation="0 180 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-26.jpg" position="-8.5 5.3 9.93" rotation="0 180 0" width="1.35"
+      height="0.9"></a-image>
+
+    <!-- Raised row on the downstairs left wall -->
+    <a-image src="./assets/photo-27.jpg" position="-10.68 5.3 0.75" rotation="0 90 0" width="1.35"
+      height="0.9"></a-image>
+    <a-image src="./assets/photo-28.jpg" position="-10.68 5.3 -2.25" rotation="0 90 0" width="1.35"
+      height="0.9"></a-image>
+
+    <a-camera position="0 1.6 15" wasd-controls="fly: true">
+    </a-camera>
+  </a-scene>
+</body>
+
 </html>
