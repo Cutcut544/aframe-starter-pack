@@ -7,7 +7,7 @@
 
 <body>
   <a-scene>
-    <a-sky src="./assets/sky1.jpg" rotation="0 -90 0">
+    <a-sky src="./assets/sky-web.jpg" rotation="0 -90 0">
     </a-sky>
 
     <a-plane position="0 -0.05 -4" rotation="-90 0 0" width="60" height="60" color="#0a2f4d">
@@ -16,71 +16,276 @@
     <a-entity gltf-model="url(./assets/ROOM_1_Idol.glb)" scale="0.5 0.5 0.5" position="0 0 -2">
     </a-entity>
 
-    <!-- Back wall, left to right -->
-    <a-image src="./assets/photo-01.jpg" position="-8.5 2.3 -16.93" rotation="0 0 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-02.jpg" position="-5.5 2.3 -16.93" rotation="0 0 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-03.jpg" position="2 1.8 -16.93" rotation="0 0 0" width="1.35" height="0.9"></a-image>
-    <a-image src="./assets/photo-04.jpg" position="5 1.8 -16.93" rotation="0 0 0" width="1.35" height="0.9"></a-image>
+    <!-- Exterior back wall -->
+    <a-image src="assets/panel-previews/iceland-photo-01.jpg" position="-8.5 2.3 -17.03" rotation="0 180 0" width="1.08"
+      height="1.35"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-02.jpg" position="-5.5 2.3 -17.03" rotation="0 180 0" width="1.35"
+      height="0.898"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-03.jpg" position="2 1.8 -17.03" rotation="0 180 0" width="1.08"
+      height="1.35"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-04.jpg" position="5 1.8 -17.03" rotation="0 180 0" width="1.08"
+      height="1.35"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-18.jpg" position="-8.5 5.3 -17.03" rotation="0 180 0" width="1.35"
+      height="1.013"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-19.jpg" position="-5.5 5.3 -17.03" rotation="0 180 0" width="1.35"
+      height="0.898"></a-image>
 
-    <!-- Right wall, back to front -->
-    <a-image src="./assets/EastFork-JPEG (1 of 2).jpg" position="10.68 2.3 -11.25" rotation="0 -90 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-06.jpg" position="10.68 2.3 -8.25" rotation="0 -90 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-07.jpg" position="10.68 2.3 -5.25" rotation="0 -90 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-08.jpg" position="10.68 2.3 -2.25" rotation="0 -90 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-09.jpg" position="10.68 2.3 0.75" rotation="0 -90 0" width="1.35"
-      height="0.9"></a-image>
+    <!-- Exterior right wall -->
+    <a-image src="assets/panel-previews/EastFork-JPEG (1 of 2).jpg" position="10.78 2.3 -11.25" rotation="0 90 0"
+      width="1.35" height="0.9"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-06.jpg" position="10.78 2.3 -8.25" rotation="0 90 0" width="1.08"
+      height="1.35"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-07.jpg" position="10.78 2.3 -5.25" rotation="0 90 0" width="1.35"
+      height="1.013"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-08.jpg" position="10.78 2.3 -2.25" rotation="0 90 0" width="1.08"
+      height="1.35"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-09.jpg" position="10.78 2.3 0.75" rotation="0 90 0" width="1.35"
+      height="0.42"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-20.jpg" position="10.78 5.3 -5.25" rotation="0 90 0" width="0.898"
+      height="1.35"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-21.jpg" position="10.78 5.3 -2.25" rotation="0 90 0" width="1.35"
+      height="0.898"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-22.jpg" position="10.78 5.3 0.75" rotation="0 90 0" width="1.35"
+      height="1.013"></a-image>
 
-    <!-- Front wall, near the entrance side -->
-    <a-image src="./assets/photo-10.jpg" position="8.5 2.3 9.93" rotation="0 180 0" width="1.35" height="0.9"></a-image>
-    <a-image src="./assets/photo-11.jpg" position="5.5 2.3 9.93" rotation="0 180 0" width="1.35" height="0.9"></a-image>
-    <a-image src="./assets/photo-12.jpg" position="-5.5 2.3 9.93" rotation="0 180 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-13.jpg" position="-8.5 2.3 9.93" rotation="0 180 0" width="1.35"
-      height="0.9"></a-image>
+    <!-- Exterior front wall, visible from your starting position -->
+    <a-image src="assets/panel-previews/iceland-photo-10.jpg" position="8.5 2.3 10.03" rotation="0 0 0" width="1.08"
+      height="1.35"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-11.jpg" position="5.5 2.3 10.03" rotation="0 0 0" width="1.08"
+      height="1.35"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-12.jpg" position="-5.5 2.3 10.03" rotation="0 0 0" width="1.35"
+      height="0.898"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-13.jpg" position="-8.5 2.3 10.03" rotation="0 0 0" width="1.08"
+      height="1.35"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-23.jpg" position="8.5 5.3 10.03" rotation="0 0 0" width="1.35"
+      height="0.898"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-24.jpg" position="5.5 5.3 10.03" rotation="0 0 0" width="1.35"
+      height="0.898"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-25.jpg" position="-5.5 5.3 10.03" rotation="0 0 0" width="1.35"
+      height="0.898"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-26.jpg" position="-8.5 5.3 10.03" rotation="0 0 0" width="1.35"
+      height="0.898"></a-image>
 
-    <!-- Left wall, front to back -->
-    <a-image src="./assets/photo-14.jpg" position="-10.68 2.3 0.75" rotation="0 90 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-15.jpg" position="-10.68 2.3 -2.25" rotation="0 90 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-16.jpg" position="-10.68 2.3 -6.25" rotation="0 90 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-17.jpg" position="-10.68 2.3 -9.25" rotation="0 90 0" width="1.35"
-      height="0.9"></a-image>
+    <!-- Exterior left wall -->
+    <a-image src="assets/panel-previews/iceland-photo-14.jpg" position="-10.78 2.3 0.75" rotation="0 -90 0" width="1.35"
+      height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-15.jpg" position="-10.78 2.3 -2.25" rotation="0 -90 0"
+      width="1.35" height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-16.jpg" position="-10.78 2.3 -6.25" rotation="0 -90 0"
+      width="1.35" height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-17.jpg" position="-10.78 2.3 -9.25" rotation="0 -90 0"
+      width="1.08" height="1.35"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-27.jpg" position="-10.78 5.3 0.75" rotation="0 -90 0" width="1.35"
+      height="0.898"></a-image>
+    <a-image src="assets/panel-previews/iceland-photo-28.jpg" position="-10.78 5.3 -2.25" rotation="0 -90 0" width="0.9"
+      height="1.35"></a-image>
 
-    <!-- Raised row on the downstairs back wall -->
-    <a-image src="./assets/photo-18.jpg" position="-8.5 5.3 -16.93" rotation="0 0 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-19.jpg" position="-5.5 5.3 -16.93" rotation="0 0 0" width="1.35"
-      height="0.9"></a-image>
+    <!-- Large exterior photos -->
+    <a-image src="assets/panel-previews/iceland-large-left.jpg" position="-10.78 3.8 6.25" rotation="0 -90 0"
+      width="3.36" height="4.2"></a-image>
+    <a-image src="assets/panel-previews/iceland-large-right.jpg" position="10.78 3.8 6.25" rotation="0 90 0" width="4.2"
+      height="3.15"></a-image>
+    <a-image src="assets/panel-previews/iceland-large-back.jpg" position="3.5 7.3 -17.03" rotation="0 180 0" width="4.2"
+      height="2.199"></a-image>
 
-    <!-- Raised row on the downstairs right wall -->
-    <a-image src="./assets/photo-20.jpg" position="10.68 5.3 -5.25" rotation="0 -90 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-21.jpg" position="10.68 5.3 -2.25" rotation="0 -90 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-22.jpg" position="10.68 5.3 0.75" rotation="0 -90 0" width="1.35"
-      height="0.9"></a-image>
+    <!-- Additional photographs on the opposite faces and upper panels -->
+    <a-image src="assets/panel-previews/iceland-panel-002.jpg" position="2 1.8 -16.92" rotation="0 0 0" width="1.080"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-004.jpg" position="5 1.8 -16.92" rotation="0 0 0" width="1.350"
+      height="0.901"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-006.jpg" position="-10.67 2.3 -9.25" rotation="0 90 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-008.jpg" position="-10.67 2.3 -6.25" rotation="0 90 0"
+      width="1.350" height="1.013"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-010.jpg" position="-10.67 2.3 -2.25" rotation="0 90 0"
+      width="1.350" height="1.080"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-012.jpg" position="-10.67 2.3 0.75" rotation="0 90 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-014.jpg" position="-10.67 3.8 6.25" rotation="0 90 0"
+      width="4.200" height="2.201"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-015.jpg" position="10.67 2.3 -11.25" rotation="0 -90 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-017.jpg" position="10.67 2.3 -8.25" rotation="0 -90 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-019.jpg" position="10.67 2.3 -5.25" rotation="0 -90 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-021.jpg" position="10.67 2.3 -2.25" rotation="0 -90 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-023.jpg" position="10.67 2.3 0.75" rotation="0 -90 0"
+      width="1.350" height="1.013"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-025.jpg" position="10.67 3.8 6.25" rotation="0 -90 0"
+      width="3.360" height="4.200"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-028.jpg" position="-8.5 2.3 -16.92" rotation="0 0 0" width="1.080"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-029.jpg" position="-8.5 2.3 9.92" rotation="0 180 0" width="1.350"
+      height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-032.jpg" position="-5.5 2.3 -16.92" rotation="0 0 0" width="1.080"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-033.jpg" position="-5.5 2.3 9.92" rotation="0 180 0" width="1.350"
+      height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-035.jpg" position="5.5 2.3 9.92" rotation="0 180 0" width="0.899"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-037.jpg" position="8.5 2.3 9.92" rotation="0 180 0" width="1.350"
+      height="0.844"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-040.jpg" position="-10.67 5.3 -2.25" rotation="0 90 0"
+      width="1.350" height="1.013"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-042.jpg" position="-10.67 5.3 0.75" rotation="0 90 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-043.jpg" position="10.67 5.3 -5.25" rotation="0 -90 0"
+      width="1.350" height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-045.jpg" position="10.67 5.3 -2.25" rotation="0 -90 0"
+      width="1.350" height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-047.jpg" position="10.67 5.3 0.75" rotation="0 -90 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-050.jpg" position="-8.5 5.3 -16.92" rotation="0 0 0" width="1.080"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-051.jpg" position="-8.5 5.3 9.92" rotation="0 180 0" width="1.350"
+      height="1.080"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-054.jpg" position="-5.5 5.3 -16.92" rotation="0 0 0" width="1.350"
+      height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-055.jpg" position="-5.5 5.3 9.92" rotation="0 180 0" width="1.350"
+      height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-057.jpg" position="5.5 5.3 9.92" rotation="0 180 0" width="1.080"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-059.jpg" position="8.5 5.3 9.92" rotation="0 180 0" width="1.350"
+      height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-062.jpg" position="3.5 7.3 -16.92" rotation="0 0 0" width="4.200"
+      height="2.796"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-063.jpg" position="-8.5 7.47 4.75" rotation="90 0 0" width="1.080"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-064.jpg" position="-8.5 7.58 4.75" rotation="-90 0 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-065.jpg" position="-8.5 7.47 7.75" rotation="90 0 0" width="1.350"
+      height="0.901"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-066.jpg" position="-8.5 7.58 7.75" rotation="-90 0 0"
+      width="1.044" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-067.jpg" position="-5.5 7.47 4.75" rotation="90 0 0" width="1.044"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-068.jpg" position="-5.5 7.58 4.75" rotation="-90 0 0"
+      width="1.350" height="1.013"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-069.jpg" position="-5.5 7.47 7.75" rotation="90 0 0" width="0.899"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-070.jpg" position="-5.5 7.58 7.75" rotation="-90 0 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-071.jpg" position="5.5 7.47 4.75" rotation="90 0 0" width="1.350"
+      height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-072.jpg" position="5.5 7.58 4.75" rotation="-90 0 0" width="1.350"
+      height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-073.jpg" position="5.5 7.47 7.75" rotation="90 0 0" width="1.350"
+      height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-074.jpg" position="5.5 7.58 7.75" rotation="-90 0 0" width="1.080"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-075.jpg" position="8.5 7.47 4.75" rotation="90 0 0" width="1.350"
+      height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-076.jpg" position="8.5 7.58 4.75" rotation="-90 0 0" width="1.350"
+      height="1.013"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-077.jpg" position="8.5 7.47 7.75" rotation="90 0 0" width="0.899"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-078.jpg" position="8.5 7.58 7.75" rotation="-90 0 0" width="1.080"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-079.jpg" position="-3.33 10.8 -7.75" rotation="0 -90 0"
+      width="4.200" height="2.201"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-080.jpg" position="-3.22 10.8 -7.75" rotation="0 90 0"
+      width="4.200" height="2.796"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-081.jpg" position="0 14.47 -0.75" rotation="90 0 0" width="4.200"
+      height="2.201"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-082.jpg" position="0 14.58 -0.75" rotation="-90 0 0" width="4.200"
+      height="3.150"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-083.jpg" position="-10.78 16.3 -6.25" rotation="0 -90 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-084.jpg" position="-10.67 16.3 -6.25" rotation="0 90 0"
+      width="1.350" height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-085.jpg" position="-10.78 16.3 -2.25" rotation="0 -90 0"
+      width="1.350" height="0.901"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-086.jpg" position="-10.67 16.3 -2.25" rotation="0 90 0"
+      width="0.899" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-087.jpg" position="-10.78 16.3 0.75" rotation="0 -90 0"
+      width="1.350" height="1.080"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-088.jpg" position="-10.67 16.3 0.75" rotation="0 90 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-089.jpg" position="-7.53 16.3 -10.001" rotation="0 -90 0"
+      width="1.350" height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-090.jpg" position="-7.42 16.3 -10.001" rotation="0 90 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-091.jpg" position="3.67 16.3 -9.25" rotation="0 -90 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-092.jpg" position="3.78 16.3 -9.25" rotation="0 90 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-093.jpg" position="3.67 16.3 -6.25" rotation="0 -90 0"
+      width="1.350" height="1.013"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-094.jpg" position="3.78 16.3 -6.25" rotation="0 90 0"
+      width="1.350" height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-095.jpg" position="3.67 16.3 -2.25" rotation="0 -90 0"
+      width="1.350" height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-096.jpg" position="3.78 16.3 -2.25" rotation="0 90 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-097.jpg" position="3.67 16.3 0.75" rotation="0 -90 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-098.jpg" position="3.78 16.3 0.75" rotation="0 90 0" width="1.350"
+      height="1.013"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-099.jpg" position="-8.5 16.3 2.92" rotation="0 180 0"
+      width="1.350" height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-100.jpg" position="-8.5 16.3 3.03" rotation="0 0 0" width="1.350"
+      height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-101.jpg" position="-5.5 16.3 -11.53" rotation="0 180 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-102.jpg" position="-5.5 16.3 -11.42" rotation="0 0 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-103.jpg" position="-5.5 16.3 2.92" rotation="0 180 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-104.jpg" position="-5.5 16.3 3.03" rotation="0 0 0" width="1.080"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-105.jpg" position="-1.5 16.3 -11.53" rotation="0 180 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-106.jpg" position="-1.5 16.3 -11.42" rotation="0 0 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-107.jpg" position="-1.5 16.3 2.92" rotation="0 180 0"
+      width="1.350" height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-108.jpg" position="-1.5 16.3 3.03" rotation="0 0 0" width="1.350"
+      height="1.080"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-109.jpg" position="1.5 16.3 -11.53" rotation="0 180 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-110.jpg" position="1.5 16.3 -11.42" rotation="0 0 0" width="1.350"
+      height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-111.jpg" position="1.5 16.3 2.92" rotation="0 180 0" width="1.080"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-112.jpg" position="1.5 16.3 3.03" rotation="0 0 0" width="1.350"
+      height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-113.jpg" position="-10.78 19.3 -2.25" rotation="0 -90 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-114.jpg" position="-10.67 19.3 -2.25" rotation="0 90 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-115.jpg" position="-10.78 19.3 0.75" rotation="0 -90 0"
+      width="1.350" height="1.013"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-116.jpg" position="-10.67 19.3 0.75" rotation="0 90 0"
+      width="1.350" height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-117.jpg" position="3.67 19.3 -9.25" rotation="0 -90 0"
+      width="1.350" height="0.683"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-118.jpg" position="3.78 19.3 -9.25" rotation="0 90 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-119.jpg" position="3.67 19.3 -6.25" rotation="0 -90 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-120.jpg" position="3.78 19.3 -6.25" rotation="0 90 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-121.jpg" position="-8.5 19.3 2.92" rotation="0 180 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-122.jpg" position="-8.5 19.3 3.03" rotation="0 0 0" width="1.080"
+      height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-123.jpg" position="-5.5 19.3 2.92" rotation="0 180 0"
+      width="1.080" height="1.350"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-124.jpg" position="-5.5 19.3 3.03" rotation="0 0 0" width="1.350"
+      height="0.707"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-125.jpg" position="-1.5 19.3 -11.53" rotation="0 180 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-126.jpg" position="-1.5 19.3 -11.42" rotation="0 0 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-127.jpg" position="1.5 19.3 -11.53" rotation="0 180 0"
+      width="1.350" height="0.899"></a-image>
+    <a-image src="assets/panel-previews/iceland-panel-128.jpg" position="1.5 19.3 -11.42" rotation="0 0 0" width="1.350"
+      height="0.899"></a-image>
 
-    <!-- Raised row on the downstairs front wall -->
-    <a-image src="./assets/photo-23.jpg" position="8.5 5.3 9.93" rotation="0 180 0" width="1.35" height="0.9"></a-image>
-    <a-image src="./assets/photo-24.jpg" position="5.5 5.3 9.93" rotation="0 180 0" width="1.35" height="0.9"></a-image>
-    <a-image src="./assets/photo-25.jpg" position="-5.5 5.3 9.93" rotation="0 180 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-26.jpg" position="-8.5 5.3 9.93" rotation="0 180 0" width="1.35"
-      height="0.9"></a-image>
-
-    <!-- Raised row on the downstairs left wall -->
-    <a-image src="./assets/photo-27.jpg" position="-10.68 5.3 0.75" rotation="0 90 0" width="1.35"
-      height="0.9"></a-image>
-    <a-image src="./assets/photo-28.jpg" position="-10.68 5.3 -2.25" rotation="0 90 0" width="1.35"
-      height="0.9"></a-image>
+    <a-entity gltf-model="url(./assets/painted_wooden_bench_1k.gltf)" position="-5 0 13" rotation="0 180 0"></a-entity>
+    <a-entity gltf-model="url(./assets/painted_wooden_bench_1k.gltf)" position="5 0 13" rotation="0 180 0"></a-entity>
 
     <a-camera position="0 1.6 15" wasd-controls="fly: true">
     </a-camera>
